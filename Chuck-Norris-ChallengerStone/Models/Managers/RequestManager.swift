@@ -7,13 +7,8 @@
 
 import Foundation
 
-struct ChuckManager {
-    let chuckManager = "https://api.chucknorris.io/jokes/search?query"
-    
-    func fetchFacts(_ result: String){
-        let urlString = "\(chuckManager)=\(result)"
-        performRequest(with: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")
-    }
+struct RequestManager {
+    static let shared = RequestManager()
     
     func performRequest(with urlString: String){
         //1. Create a URL
@@ -45,8 +40,7 @@ struct ChuckManager {
         let decoder = JSONDecoder()
         do {
             if let decodedData = try? decoder.decode(Response.self, from: chuckData) {
-                print(decodedData.total)
-                print(decodedData.result[0].value)
+                
             }
         }
     }
