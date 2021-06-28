@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		44A3910D268A53EC005E9483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3910C268A53EC005E9483 /* AppDelegate.swift */; };
 		44A3910F268A53EC005E9483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3910E268A53EC005E9483 /* SceneDelegate.swift */; };
-		44A39111268A53EC005E9483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39110268A53EC005E9483 /* ViewController.swift */; };
 		44A39114268A53EC005E9483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A39112268A53EC005E9483 /* Main.storyboard */; };
 		44A39116268A53EE005E9483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A39115268A53EE005E9483 /* Assets.xcassets */; };
 		44A39119268A53EE005E9483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A39117268A53EE005E9483 /* LaunchScreen.storyboard */; };
 		44A39124268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39123268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift */; };
 		44A3912F268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */; };
+		44A39145268A550A005E9483 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39144268A550A005E9483 /* FactsViewController.swift */; };
+		44A3914A268A5520005E9483 /* SearchFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39149268A5520005E9483 /* SearchFactsViewController.swift */; };
+		44A39151268A565B005E9483 /* ChuckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39150268A565B005E9483 /* ChuckData.swift */; };
+		44A39159268A567C005E9483 /* ChuckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39158268A567C005E9483 /* ChuckManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		44A39109268A53EC005E9483 /* Chuck-Norris-ChallengerStone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chuck-Norris-ChallengerStone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A3910C268A53EC005E9483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A3910E268A53EC005E9483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44A39110268A53EC005E9483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44A39113268A53EC005E9483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44A39115268A53EE005E9483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A39118268A53EE005E9483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		44A3912A268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chuck-Norris-ChallengerStoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chuck_Norris_ChallengerStoneUITests.swift; sourceTree = "<group>"; };
 		44A39130268A53EE005E9483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A39144268A550A005E9483 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
+		44A39149268A5520005E9483 /* SearchFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewController.swift; sourceTree = "<group>"; };
+		44A39150268A565B005E9483 /* ChuckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckData.swift; sourceTree = "<group>"; };
+		44A39158268A567C005E9483 /* ChuckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,10 @@
 		44A3910B268A53EC005E9483 /* Chuck-Norris-ChallengerStone */ = {
 			isa = PBXGroup;
 			children = (
+				44A39140268A54EE005E9483 /* Models */,
+				44A3913F268A54EA005E9483 /* Controller */,
 				44A3910C268A53EC005E9483 /* AppDelegate.swift */,
 				44A3910E268A53EC005E9483 /* SceneDelegate.swift */,
-				44A39110268A53EC005E9483 /* ViewController.swift */,
 				44A39112268A53EC005E9483 /* Main.storyboard */,
 				44A39115268A53EE005E9483 /* Assets.xcassets */,
 				44A39117268A53EE005E9483 /* LaunchScreen.storyboard */,
@@ -126,6 +133,40 @@
 				44A39130268A53EE005E9483 /* Info.plist */,
 			);
 			path = "Chuck-Norris-ChallengerStoneUITests";
+			sourceTree = "<group>";
+		};
+		44A3913F268A54EA005E9483 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44A39144268A550A005E9483 /* FactsViewController.swift */,
+				44A39149268A5520005E9483 /* SearchFactsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44A39140268A54EE005E9483 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44A3914F268A5650005E9483 /* Managers */,
+				44A3914E268A564B005E9483 /* Datas */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44A3914E268A564B005E9483 /* Datas */ = {
+			isa = PBXGroup;
+			children = (
+				44A39150268A565B005E9483 /* ChuckData.swift */,
+			);
+			path = Datas;
+			sourceTree = "<group>";
+		};
+		44A3914F268A5650005E9483 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				44A39158268A567C005E9483 /* ChuckManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A39111268A53EC005E9483 /* ViewController.swift in Sources */,
+				44A39151268A565B005E9483 /* ChuckData.swift in Sources */,
+				44A3914A268A5520005E9483 /* SearchFactsViewController.swift in Sources */,
+				44A39159268A567C005E9483 /* ChuckManager.swift in Sources */,
 				44A3910D268A53EC005E9483 /* AppDelegate.swift in Sources */,
 				44A3910F268A53EC005E9483 /* SceneDelegate.swift in Sources */,
+				44A39145268A550A005E9483 /* FactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
