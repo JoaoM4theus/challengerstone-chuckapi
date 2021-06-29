@@ -2,7 +2,7 @@
 //  FactCell.swift
 //  Chuck-Norris-ChallengerStone
 //
-//  Created by Softbuilder Hibrido on 28/06/21.
+//  Created by Joao Matheus on 28/06/21.
 //
 
 import UIKit
@@ -15,5 +15,6 @@ class FactCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.viewPrincipal.layer.cornerRadius = frame.size.height / 20
     }
 }

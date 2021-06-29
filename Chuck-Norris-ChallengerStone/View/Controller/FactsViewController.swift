@@ -2,14 +2,13 @@
 //  FactsViewController.swift
 //  Chuck-Norris-ChallengerStone
 //
-//  Created by Softbuilder Hibrido on 28/06/21.
+//  Created by Joao Matheus on 28/06/21.
 //
 
 import UIKit
 
 class FactsViewController: UITableViewController {
     @IBOutlet weak var searchFact: UITextField!
-    var facts = [Result]()
     
     lazy var viewModel: ChuckViewModel = {
         let obj = ChuckViewModel()
@@ -24,12 +23,18 @@ class FactsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return facts.count
+        return viewModel.facts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! FactCell
-        cell.descriptionFact.text = facts[indexPath.row].value
+        let fact = viewModel.facts[indexPath.row]
+        cell.descriptionFact.text = fact.value
+        
+        if !fact.categories!.isEmpty {
+            cell.categorieFact.text = fact.categories?[0]
+        }
+        
         return cell
     }
     
@@ -38,7 +43,8 @@ class FactsViewController: UITableViewController {
 extension FactsViewController: ChuckDelegate {
     func finishFetchFacts(facts: [Result]) {
         DispatchQueue.main.async {
-            self.facts.append(contentsOf: facts)
+            self.viewModel.facts.append(contentsOf: facts)
+            self.hideActivity()
             self.tableView.reloadData()
         }
     }
@@ -58,14 +64,14 @@ extension FactsViewController: UITextFieldDelegate {
         if textField.text != "" {
             return true
         } else {
-            self.facts.removeAll()
+            self.viewModel.facts.removeAll()
             self.tableView.reloadData()
-            textField.placeholder = "Search fact"
             return false
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        showActivity()
         self.viewModel.fetchFacts(searchFact.text ?? "")
     }
 }

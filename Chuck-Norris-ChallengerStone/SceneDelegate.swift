@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Chuck-Norris-ChallengerStone
 //
-//  Created by Softbuilder Hibrido on 28/06/21.
+//  Created by Joao Matheus on 28/06/21.
 //
 
 import UIKit

@@ -18,17 +18,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyU-sh-ewD">
-                        <rect key="frame" x="3" y="3" width="395" height="194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="197"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNCATEGORIZED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6D-Bn-V9O">
-                                <rect key="frame" x="9" y="167" width="151" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uncategorized" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6D-Bn-V9O">
+                                <rect key="frame" x="9" y="170" width="157" height="18"/>
                                 <color key="backgroundColor" red="0.53379791980000002" green="0.81691920760000003" blue="0.85616910459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzB-ve-5a0">
-                                <rect key="frame" x="0.0" y="0.0" width="395" height="157"/>
+                                <rect key="frame" x="10" y="10" width="381" height="150"/>
                                 <color key="backgroundColor" red="0.53379791980000002" green="0.81691920760000003" blue="0.85616910459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Chuck Norris, Jesus, and Barack Obama
 </string>
@@ -39,12 +39,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.050980392159999999" green="0.29411764709999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="YzB-ve-5a0" secondAttribute="trailing" id="COl-j4-nkd"/>
+                            <constraint firstAttribute="trailing" secondItem="YzB-ve-5a0" secondAttribute="trailing" constant="10" id="COl-j4-nkd"/>
                             <constraint firstItem="u6D-Bn-V9O" firstAttribute="top" secondItem="YzB-ve-5a0" secondAttribute="bottom" constant="10" id="Hhk-eQ-R02"/>
                             <constraint firstItem="u6D-Bn-V9O" firstAttribute="leading" secondItem="dyU-sh-ewD" secondAttribute="leading" constant="9" id="I7f-rX-2i1"/>
                             <constraint firstAttribute="trailing" secondItem="u6D-Bn-V9O" secondAttribute="trailing" constant="235" id="JHD-do-HHM"/>
-                            <constraint firstItem="YzB-ve-5a0" firstAttribute="top" secondItem="dyU-sh-ewD" secondAttribute="top" id="Nas-K9-DjJ"/>
-                            <constraint firstItem="YzB-ve-5a0" firstAttribute="leading" secondItem="dyU-sh-ewD" secondAttribute="leading" id="U9J-Rs-YVj"/>
+                            <constraint firstItem="YzB-ve-5a0" firstAttribute="top" secondItem="dyU-sh-ewD" secondAttribute="top" constant="10" id="Nas-K9-DjJ"/>
+                            <constraint firstItem="YzB-ve-5a0" firstAttribute="leading" secondItem="dyU-sh-ewD" secondAttribute="leading" constant="10" id="U9J-Rs-YVj"/>
                             <constraint firstAttribute="bottom" secondItem="u6D-Bn-V9O" secondAttribute="bottom" constant="9" id="jhS-7Y-t80"/>
                         </constraints>
                     </view>
@@ -53,14 +53,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="pq5-8n-wFh" secondAttribute="bottom" id="JfU-0p-qhL"/>
-                    <constraint firstItem="dyU-sh-ewD" firstAttribute="leading" secondItem="GQm-x9-K4r" secondAttribute="leading" constant="3" id="Lyl-IP-TcV"/>
-                    <constraint firstItem="dyU-sh-ewD" firstAttribute="top" secondItem="GQm-x9-K4r" secondAttribute="top" constant="3" id="Ngi-Ga-0i8"/>
+                    <constraint firstItem="dyU-sh-ewD" firstAttribute="leading" secondItem="GQm-x9-K4r" secondAttribute="leading" id="Lyl-IP-TcV"/>
+                    <constraint firstItem="dyU-sh-ewD" firstAttribute="top" secondItem="GQm-x9-K4r" secondAttribute="top" id="Ngi-Ga-0i8"/>
                     <constraint firstAttribute="trailing" secondItem="pq5-8n-wFh" secondAttribute="trailing" id="S7h-Lc-CUd"/>
                     <constraint firstItem="pq5-8n-wFh" firstAttribute="leading" secondItem="GQm-x9-K4r" secondAttribute="leading" id="Vfl-08-pzq"/>
-                    <constraint firstAttribute="trailing" secondItem="dyU-sh-ewD" secondAttribute="trailing" constant="3" id="aqC-gI-IaI"/>
+                    <constraint firstAttribute="trailing" secondItem="dyU-sh-ewD" secondAttribute="trailing" id="aqC-gI-IaI"/>
                     <constraint firstItem="pq5-8n-wFh" firstAttribute="top" secondItem="dyU-sh-ewD" secondAttribute="bottom" constant="4" id="bdi-kW-RvX"/>
                     <constraint firstAttribute="bottom" secondItem="dyU-sh-ewD" secondAttribute="bottom" constant="18" id="dUM-Y9-Q00"/>
                 </constraints>

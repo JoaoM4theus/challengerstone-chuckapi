@@ -2,7 +2,7 @@
 //  ChuckViewModels.swift
 //  Chuck-Norris-ChallengerStone
 //
-//  Created by Softbuilder Hibrido on 28/06/21.
+//  Created by Joao Matheus on 28/06/21.
 //
 
 import Foundation
@@ -15,6 +15,7 @@ protocol ChuckDelegate: AnyObject {
 class ChuckViewModel {
     let chuckURL = ChuckAPIURL.getFact.rawValue
     weak var delegate: ChuckDelegate?
+    var facts = [Result]()
     
     func fetchFacts(_ result: String){
         let urlString = "\(chuckURL)=\(result)"
@@ -24,7 +25,6 @@ class ChuckViewModel {
                 let decoder = JSONDecoder()
                 if let response = try? decoder.decode(Response.self, from: data) {
                     let facts = response.result
-                    print(facts)
                     self?.delegate?.finishFetchFacts(facts: facts)
                 }
             } else {

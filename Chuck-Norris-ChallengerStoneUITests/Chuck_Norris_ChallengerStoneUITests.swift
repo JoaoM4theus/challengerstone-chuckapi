@@ -2,7 +2,7 @@
 //  Chuck_Norris_ChallengerStoneUITests.swift
 //  Chuck-Norris-ChallengerStoneUITests
 //
-//  Created by Softbuilder Hibrido on 28/06/21.
+//  Created by Joao Matheus on 29/06/21.
 //
 
 import XCTest

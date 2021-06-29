@@ -12,8 +12,6 @@
 		44A39114268A53EC005E9483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A39112268A53EC005E9483 /* Main.storyboard */; };
 		44A39116268A53EE005E9483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A39115268A53EE005E9483 /* Assets.xcassets */; };
 		44A39119268A53EE005E9483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A39117268A53EE005E9483 /* LaunchScreen.storyboard */; };
-		44A39124268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39123268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift */; };
-		44A3912F268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */; };
 		44A39145268A550A005E9483 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39144268A550A005E9483 /* FactsViewController.swift */; };
 		44A39151268A565B005E9483 /* ChuckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39150268A565B005E9483 /* ChuckData.swift */; };
 		44A39159268A567C005E9483 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39158268A567C005E9483 /* RequestManager.swift */; };
@@ -21,17 +19,20 @@
 		44A39185268A8980005E9483 /* ChuckAPIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39184268A8980005E9483 /* ChuckAPIURL.swift */; };
 		44A391A4268AA215005E9483 /* FactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A391A3268AA215005E9483 /* FactCell.xib */; };
 		44A391AA268AA545005E9483 /* FactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A391A9268AA545005E9483 /* FactCell.swift */; };
+		44A86AA6268B8C2E00C75DC1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A86AA5268B8C2E00C75DC1 /* Extensions.swift */; };
+		44A86AB3268B9C0B00C75DC1 /* Chuck_Norris_ChallengerStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A86AB2268B9C0B00C75DC1 /* Chuck_Norris_ChallengerStoneTests.swift */; };
+		44A86AC3268B9C9E00C75DC1 /* Chuck_Norris_ChallengerStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A86AC2268B9C9E00C75DC1 /* Chuck_Norris_ChallengerStoneUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		44A39120268A53EE005E9483 /* PBXContainerItemProxy */ = {
+		44A86AB5268B9C0B00C75DC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44A39101268A53EC005E9483 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 44A39108268A53EC005E9483;
 			remoteInfo = "Chuck-Norris-ChallengerStone";
 		};
-		44A3912B268A53EE005E9483 /* PBXContainerItemProxy */ = {
+		44A86AC5268B9C9E00C75DC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44A39101268A53EC005E9483 /* Project object */;
 			proxyType = 1;
@@ -48,12 +49,6 @@
 		44A39115268A53EE005E9483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A39118268A53EE005E9483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A3911A268A53EE005E9483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44A3911F268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chuck-Norris-ChallengerStoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44A39123268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chuck_Norris_ChallengerStoneTests.swift; sourceTree = "<group>"; };
-		44A39125268A53EE005E9483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44A3912A268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chuck-Norris-ChallengerStoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chuck_Norris_ChallengerStoneUITests.swift; sourceTree = "<group>"; };
-		44A39130268A53EE005E9483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44A39144268A550A005E9483 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		44A39150268A565B005E9483 /* ChuckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckData.swift; sourceTree = "<group>"; };
 		44A39158268A567C005E9483 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
@@ -61,6 +56,13 @@
 		44A39184268A8980005E9483 /* ChuckAPIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAPIURL.swift; sourceTree = "<group>"; };
 		44A391A3268AA215005E9483 /* FactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactCell.xib; sourceTree = "<group>"; };
 		44A391A9268AA545005E9483 /* FactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCell.swift; sourceTree = "<group>"; };
+		44A86AA5268B8C2E00C75DC1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		44A86AB0268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chuck-Norris-ChallengerStoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A86AB2268B9C0B00C75DC1 /* Chuck_Norris_ChallengerStoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chuck_Norris_ChallengerStoneTests.swift; sourceTree = "<group>"; };
+		44A86AB4268B9C0B00C75DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A86AC0268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chuck-Norris-ChallengerStoneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A86AC2268B9C9E00C75DC1 /* Chuck_Norris_ChallengerStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chuck_Norris_ChallengerStoneUITests.swift; sourceTree = "<group>"; };
+		44A86AC4268B9C9E00C75DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +73,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A3911C268A53EE005E9483 /* Frameworks */ = {
+		44A86AAD268B9C0B00C75DC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A39127268A53EE005E9483 /* Frameworks */ = {
+		44A86ABD268B9C9E00C75DC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				44A3910B268A53EC005E9483 /* Chuck-Norris-ChallengerStone */,
-				44A39122268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests */,
-				44A3912D268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests */,
+				44A86AB1268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests */,
+				44A86AC1268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests */,
 				44A3910A268A53EC005E9483 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				44A39109268A53EC005E9483 /* Chuck-Norris-ChallengerStone.app */,
-				44A3911F268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests.xctest */,
-				44A3912A268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests.xctest */,
+				44A86AB0268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests.xctest */,
+				44A86AC0268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,24 +123,6 @@
 				44A3911A268A53EE005E9483 /* Info.plist */,
 			);
 			path = "Chuck-Norris-ChallengerStone";
-			sourceTree = "<group>";
-		};
-		44A39122268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests */ = {
-			isa = PBXGroup;
-			children = (
-				44A39123268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift */,
-				44A39125268A53EE005E9483 /* Info.plist */,
-			);
-			path = "Chuck-Norris-ChallengerStoneTests";
-			sourceTree = "<group>";
-		};
-		44A3912D268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests */ = {
-			isa = PBXGroup;
-			children = (
-				44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */,
-				44A39130268A53EE005E9483 /* Info.plist */,
-			);
-			path = "Chuck-Norris-ChallengerStoneUITests";
 			sourceTree = "<group>";
 		};
 		44A3913F268A54EA005E9483 /* View */ = {
@@ -188,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				44A39183268A895A005E9483 /* Enums */,
+				44A86AA5268B8C2E00C75DC1 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +211,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		44A86AB1268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				44A86AB2268B9C0B00C75DC1 /* Chuck_Norris_ChallengerStoneTests.swift */,
+				44A86AB4268B9C0B00C75DC1 /* Info.plist */,
+			);
+			path = "Chuck-Norris-ChallengerStoneTests";
+			sourceTree = "<group>";
+		};
+		44A86AC1268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44A86AC2268B9C9E00C75DC1 /* Chuck_Norris_ChallengerStoneUITests.swift */,
+				44A86AC4268B9C9E00C75DC1 /* Info.plist */,
+			);
+			path = "Chuck-Norris-ChallengerStoneUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,40 +249,40 @@
 			productReference = 44A39109268A53EC005E9483 /* Chuck-Norris-ChallengerStone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		44A3911E268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests */ = {
+		44A86AAF268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44A39136268A53EE005E9483 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneTests" */;
+			buildConfigurationList = 44A86AB7268B9C0B00C75DC1 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneTests" */;
 			buildPhases = (
-				44A3911B268A53EE005E9483 /* Sources */,
-				44A3911C268A53EE005E9483 /* Frameworks */,
-				44A3911D268A53EE005E9483 /* Resources */,
+				44A86AAC268B9C0B00C75DC1 /* Sources */,
+				44A86AAD268B9C0B00C75DC1 /* Frameworks */,
+				44A86AAE268B9C0B00C75DC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				44A39121268A53EE005E9483 /* PBXTargetDependency */,
+				44A86AB6268B9C0B00C75DC1 /* PBXTargetDependency */,
 			);
 			name = "Chuck-Norris-ChallengerStoneTests";
 			productName = "Chuck-Norris-ChallengerStoneTests";
-			productReference = 44A3911F268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests.xctest */;
+			productReference = 44A86AB0268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		44A39129268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests */ = {
+		44A86ABF268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44A39139268A53EE005E9483 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneUITests" */;
+			buildConfigurationList = 44A86AC7268B9C9E00C75DC1 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneUITests" */;
 			buildPhases = (
-				44A39126268A53EE005E9483 /* Sources */,
-				44A39127268A53EE005E9483 /* Frameworks */,
-				44A39128268A53EE005E9483 /* Resources */,
+				44A86ABC268B9C9E00C75DC1 /* Sources */,
+				44A86ABD268B9C9E00C75DC1 /* Frameworks */,
+				44A86ABE268B9C9E00C75DC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				44A3912C268A53EE005E9483 /* PBXTargetDependency */,
+				44A86AC6268B9C9E00C75DC1 /* PBXTargetDependency */,
 			);
 			name = "Chuck-Norris-ChallengerStoneUITests";
 			productName = "Chuck-Norris-ChallengerStoneUITests";
-			productReference = 44A3912A268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests.xctest */;
+			productReference = 44A86AC0268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -294,11 +297,11 @@
 					44A39108268A53EC005E9483 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					44A3911E268A53EE005E9483 = {
+					44A86AAF268B9C0B00C75DC1 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 44A39108268A53EC005E9483;
 					};
-					44A39129268A53EE005E9483 = {
+					44A86ABF268B9C9E00C75DC1 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 44A39108268A53EC005E9483;
 					};
@@ -318,8 +321,8 @@
 			projectRoot = "";
 			targets = (
 				44A39108268A53EC005E9483 /* Chuck-Norris-ChallengerStone */,
-				44A3911E268A53EE005E9483 /* Chuck-Norris-ChallengerStoneTests */,
-				44A39129268A53EE005E9483 /* Chuck-Norris-ChallengerStoneUITests */,
+				44A86AAF268B9C0B00C75DC1 /* Chuck-Norris-ChallengerStoneTests */,
+				44A86ABF268B9C9E00C75DC1 /* Chuck-Norris-ChallengerStoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -336,14 +339,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A3911D268A53EE005E9483 /* Resources */ = {
+		44A86AAE268B9C0B00C75DC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A39128268A53EE005E9483 /* Resources */ = {
+		44A86ABE268B9C9E00C75DC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -358,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A3916C268A623B005E9483 /* ChuckViewModels.swift in Sources */,
+				44A86AA6268B8C2E00C75DC1 /* Extensions.swift in Sources */,
 				44A39151268A565B005E9483 /* ChuckData.swift in Sources */,
 				44A39159268A567C005E9483 /* RequestManager.swift in Sources */,
 				44A3910D268A53EC005E9483 /* AppDelegate.swift in Sources */,
@@ -368,34 +372,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A3911B268A53EE005E9483 /* Sources */ = {
+		44A86AAC268B9C0B00C75DC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A39124268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift in Sources */,
+				44A86AB3268B9C0B00C75DC1 /* Chuck_Norris_ChallengerStoneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A39126268A53EE005E9483 /* Sources */ = {
+		44A86ABC268B9C9E00C75DC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A3912F268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift in Sources */,
+				44A86AC3268B9C9E00C75DC1 /* Chuck_Norris_ChallengerStoneUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		44A39121268A53EE005E9483 /* PBXTargetDependency */ = {
+		44A86AB6268B9C0B00C75DC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 44A39108268A53EC005E9483 /* Chuck-Norris-ChallengerStone */;
-			targetProxy = 44A39120268A53EE005E9483 /* PBXContainerItemProxy */;
+			targetProxy = 44A86AB5268B9C0B00C75DC1 /* PBXContainerItemProxy */;
 		};
-		44A3912C268A53EE005E9483 /* PBXTargetDependency */ = {
+		44A86AC6268B9C9E00C75DC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 44A39108268A53EC005E9483 /* Chuck-Norris-ChallengerStone */;
-			targetProxy = 44A3912B268A53EE005E9483 /* PBXContainerItemProxy */;
+			targetProxy = 44A86AC5268B9C9E00C75DC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -571,14 +575,12 @@
 			};
 			name = Release;
 		};
-		44A39137268A53EE005E9483 /* Debug */ = {
+		44A86AB8268B9C0B00C75DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Chuck-Norris-ChallengerStoneTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,14 +594,12 @@
 			};
 			name = Debug;
 		};
-		44A39138268A53EE005E9483 /* Release */ = {
+		44A86AB9268B9C0B00C75DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Chuck-Norris-ChallengerStoneTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,10 +613,9 @@
 			};
 			name = Release;
 		};
-		44A3913A268A53EE005E9483 /* Debug */ = {
+		44A86AC8268B9C9E00C75DC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Chuck-Norris-ChallengerStoneUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -632,10 +631,9 @@
 			};
 			name = Debug;
 		};
-		44A3913B268A53EE005E9483 /* Release */ = {
+		44A86AC9268B9C9E00C75DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Chuck-Norris-ChallengerStoneUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,20 +670,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44A39136268A53EE005E9483 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneTests" */ = {
+		44A86AB7268B9C0B00C75DC1 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44A39137268A53EE005E9483 /* Debug */,
-				44A39138268A53EE005E9483 /* Release */,
+				44A86AB8268B9C0B00C75DC1 /* Debug */,
+				44A86AB9268B9C0B00C75DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44A39139268A53EE005E9483 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneUITests" */ = {
+		44A86AC7268B9C9E00C75DC1 /* Build configuration list for PBXNativeTarget "Chuck-Norris-ChallengerStoneUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44A3913A268A53EE005E9483 /* Debug */,
-				44A3913B268A53EE005E9483 /* Release */,
+				44A86AC8268B9C9E00C75DC1 /* Debug */,
+				44A86AC9268B9C9E00C75DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
