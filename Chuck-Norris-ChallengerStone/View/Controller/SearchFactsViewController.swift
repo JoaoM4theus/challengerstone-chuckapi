@@ -8,12 +8,12 @@
 import UIKit
 
 class SearchFactsViewController: UIViewController {
-    var chuckManager = ChuckManager()
+    var chuckViewModel = ChuckViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        chuckManager.fetchFacts("Playstation")
+        chuckViewModel.fetchFacts("Cell")
     }
     
 

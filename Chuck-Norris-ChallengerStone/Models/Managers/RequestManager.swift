@@ -10,39 +10,21 @@ import Foundation
 struct RequestManager {
     static let shared = RequestManager()
     
-    func performRequest(with urlString: String){
-        //1. Create a URL
-        if let url = URL(string: urlString) {
-            
-            //2. Create a URLSession
-            let session = URLSession(configuration: .default)
-            
-            //3. Give the session a task
-            let task = session.dataTask(with: url) { (data, response, error) in
+    func performRequest(with urlString: String, completion: @escaping (Data?, String?) -> Void ){
+        if let request = URL(string: urlString) {
 
-                if error != nil {
-                    print("error1")
+            let session = URLSession(configuration: .default)
+
+            let task = session.dataTask(with: request) { (data, response, error) in
+                guard let _ = error else {
+                    completion(data, nil)
                     return
                 }
-                
-                if let safeData = data {
-                    parseJSON(safeData)
-                }
+                completion(nil, error.debugDescription)
             }
             
-            //4. Start the task
             task.resume()
             
         }
     }
-    
-    func parseJSON(_ chuckData: Data) {
-        let decoder = JSONDecoder()
-        do {
-            if let decodedData = try? decoder.decode(Response.self, from: chuckData) {
-                
-            }
-        }
-    }
-    
 }

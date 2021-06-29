@@ -17,7 +17,11 @@
 		44A39145268A550A005E9483 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39144268A550A005E9483 /* FactsViewController.swift */; };
 		44A3914A268A5520005E9483 /* SearchFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39149268A5520005E9483 /* SearchFactsViewController.swift */; };
 		44A39151268A565B005E9483 /* ChuckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39150268A565B005E9483 /* ChuckData.swift */; };
-		44A39159268A567C005E9483 /* ChuckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39158268A567C005E9483 /* ChuckManager.swift */; };
+		44A39159268A567C005E9483 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39158268A567C005E9483 /* RequestManager.swift */; };
+		44A3916C268A623B005E9483 /* ChuckViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3916B268A623B005E9483 /* ChuckViewModels.swift */; };
+		44A39185268A8980005E9483 /* ChuckAPIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39184268A8980005E9483 /* ChuckAPIURL.swift */; };
+		44A391A4268AA215005E9483 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A391A3268AA215005E9483 /* Empty.xib */; };
+		44A391AA268AA545005E9483 /* FactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A391A9268AA545005E9483 /* FactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,11 @@
 		44A39144268A550A005E9483 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
 		44A39149268A5520005E9483 /* SearchFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewController.swift; sourceTree = "<group>"; };
 		44A39150268A565B005E9483 /* ChuckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckData.swift; sourceTree = "<group>"; };
-		44A39158268A567C005E9483 /* ChuckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckManager.swift; sourceTree = "<group>"; };
+		44A39158268A567C005E9483 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		44A3916B268A623B005E9483 /* ChuckViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckViewModels.swift; sourceTree = "<group>"; };
+		44A39184268A8980005E9483 /* ChuckAPIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAPIURL.swift; sourceTree = "<group>"; };
+		44A391A3268AA215005E9483 /* Empty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
+		44A391A9268AA545005E9483 /* FactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +113,13 @@
 		44A3910B268A53EC005E9483 /* Chuck-Norris-ChallengerStone */ = {
 			isa = PBXGroup;
 			children = (
+				44A39177268A8946005E9483 /* Utils */,
+				44A3916A268A6231005E9483 /* ViewModels */,
 				44A39140268A54EE005E9483 /* Models */,
-				44A3913F268A54EA005E9483 /* Controller */,
+				44A3913F268A54EA005E9483 /* View */,
 				44A3910C268A53EC005E9483 /* AppDelegate.swift */,
 				44A3910E268A53EC005E9483 /* SceneDelegate.swift */,
-				44A39112268A53EC005E9483 /* Main.storyboard */,
 				44A39115268A53EE005E9483 /* Assets.xcassets */,
-				44A39117268A53EE005E9483 /* LaunchScreen.storyboard */,
 				44A3911A268A53EE005E9483 /* Info.plist */,
 			);
 			path = "Chuck-Norris-ChallengerStone";
@@ -135,13 +143,14 @@
 			path = "Chuck-Norris-ChallengerStoneUITests";
 			sourceTree = "<group>";
 		};
-		44A3913F268A54EA005E9483 /* Controller */ = {
+		44A3913F268A54EA005E9483 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				44A39144268A550A005E9483 /* FactsViewController.swift */,
-				44A39149268A5520005E9483 /* SearchFactsViewController.swift */,
+				44A391A8268AA535005E9483 /* Cell */,
+				44A39190268A9820005E9483 /* Storyboard */,
+				44A3918F268A9816005E9483 /* Controller */,
 			);
-			path = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
 		44A39140268A54EE005E9483 /* Models */ = {
@@ -164,9 +173,60 @@
 		44A3914F268A5650005E9483 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				44A39158268A567C005E9483 /* ChuckManager.swift */,
+				44A39158268A567C005E9483 /* RequestManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		44A3916A268A6231005E9483 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				44A3916B268A623B005E9483 /* ChuckViewModels.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		44A39177268A8946005E9483 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				44A39183268A895A005E9483 /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		44A39183268A895A005E9483 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				44A39184268A8980005E9483 /* ChuckAPIURL.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		44A3918F268A9816005E9483 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44A39149268A5520005E9483 /* SearchFactsViewController.swift */,
+				44A39144268A550A005E9483 /* FactsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44A39190268A9820005E9483 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				44A39112268A53EC005E9483 /* Main.storyboard */,
+				44A39117268A53EE005E9483 /* LaunchScreen.storyboard */,
+				44A391A3268AA215005E9483 /* Empty.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		44A391A8268AA535005E9483 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44A391A9268AA545005E9483 /* FactCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A39119268A53EE005E9483 /* LaunchScreen.storyboard in Resources */,
+				44A391A4268AA215005E9483 /* Empty.xib in Resources */,
 				44A39116268A53EE005E9483 /* Assets.xcassets in Resources */,
 				44A39114268A53EC005E9483 /* Main.storyboard in Resources */,
 			);
@@ -299,12 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3916C268A623B005E9483 /* ChuckViewModels.swift in Sources */,
 				44A39151268A565B005E9483 /* ChuckData.swift in Sources */,
 				44A3914A268A5520005E9483 /* SearchFactsViewController.swift in Sources */,
-				44A39159268A567C005E9483 /* ChuckManager.swift in Sources */,
+				44A39159268A567C005E9483 /* RequestManager.swift in Sources */,
 				44A3910D268A53EC005E9483 /* AppDelegate.swift in Sources */,
 				44A3910F268A53EC005E9483 /* SceneDelegate.swift in Sources */,
 				44A39145268A550A005E9483 /* FactsViewController.swift in Sources */,
+				44A391AA268AA545005E9483 /* FactCell.swift in Sources */,
+				44A39185268A8980005E9483 /* ChuckAPIURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

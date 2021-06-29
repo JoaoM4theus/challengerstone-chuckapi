@@ -8,7 +8,6 @@
 import Foundation
 
 struct Response: Codable {
-    let total: Int
     let result: [Result]
 }
 
