@@ -15,12 +15,11 @@
 		44A39124268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39123268A53EE005E9483 /* Chuck_Norris_ChallengerStoneTests.swift */; };
 		44A3912F268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */; };
 		44A39145268A550A005E9483 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39144268A550A005E9483 /* FactsViewController.swift */; };
-		44A3914A268A5520005E9483 /* SearchFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39149268A5520005E9483 /* SearchFactsViewController.swift */; };
 		44A39151268A565B005E9483 /* ChuckData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39150268A565B005E9483 /* ChuckData.swift */; };
 		44A39159268A567C005E9483 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39158268A567C005E9483 /* RequestManager.swift */; };
 		44A3916C268A623B005E9483 /* ChuckViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3916B268A623B005E9483 /* ChuckViewModels.swift */; };
 		44A39185268A8980005E9483 /* ChuckAPIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A39184268A8980005E9483 /* ChuckAPIURL.swift */; };
-		44A391A4268AA215005E9483 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A391A3268AA215005E9483 /* Empty.xib */; };
+		44A391A4268AA215005E9483 /* FactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A391A3268AA215005E9483 /* FactCell.xib */; };
 		44A391AA268AA545005E9483 /* FactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A391A9268AA545005E9483 /* FactCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,12 +55,11 @@
 		44A3912E268A53EE005E9483 /* Chuck_Norris_ChallengerStoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chuck_Norris_ChallengerStoneUITests.swift; sourceTree = "<group>"; };
 		44A39130268A53EE005E9483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44A39144268A550A005E9483 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
-		44A39149268A5520005E9483 /* SearchFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFactsViewController.swift; sourceTree = "<group>"; };
 		44A39150268A565B005E9483 /* ChuckData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckData.swift; sourceTree = "<group>"; };
 		44A39158268A567C005E9483 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		44A3916B268A623B005E9483 /* ChuckViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckViewModels.swift; sourceTree = "<group>"; };
 		44A39184268A8980005E9483 /* ChuckAPIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAPIURL.swift; sourceTree = "<group>"; };
-		44A391A3268AA215005E9483 /* Empty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
+		44A391A3268AA215005E9483 /* FactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactCell.xib; sourceTree = "<group>"; };
 		44A391A9268AA545005E9483 /* FactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,7 +203,6 @@
 		44A3918F268A9816005E9483 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				44A39149268A5520005E9483 /* SearchFactsViewController.swift */,
 				44A39144268A550A005E9483 /* FactsViewController.swift */,
 			);
 			path = Controller;
@@ -216,7 +213,7 @@
 			children = (
 				44A39112268A53EC005E9483 /* Main.storyboard */,
 				44A39117268A53EE005E9483 /* LaunchScreen.storyboard */,
-				44A391A3268AA215005E9483 /* Empty.xib */,
+				44A391A3268AA215005E9483 /* FactCell.xib */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -333,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A39119268A53EE005E9483 /* LaunchScreen.storyboard in Resources */,
-				44A391A4268AA215005E9483 /* Empty.xib in Resources */,
+				44A391A4268AA215005E9483 /* FactCell.xib in Resources */,
 				44A39116268A53EE005E9483 /* Assets.xcassets in Resources */,
 				44A39114268A53EC005E9483 /* Main.storyboard in Resources */,
 			);
@@ -362,7 +359,6 @@
 			files = (
 				44A3916C268A623B005E9483 /* ChuckViewModels.swift in Sources */,
 				44A39151268A565B005E9483 /* ChuckData.swift in Sources */,
-				44A3914A268A5520005E9483 /* SearchFactsViewController.swift in Sources */,
 				44A39159268A567C005E9483 /* RequestManager.swift in Sources */,
 				44A3910D268A53EC005E9483 /* AppDelegate.swift in Sources */,
 				44A3910F268A53EC005E9483 /* SceneDelegate.swift in Sources */,

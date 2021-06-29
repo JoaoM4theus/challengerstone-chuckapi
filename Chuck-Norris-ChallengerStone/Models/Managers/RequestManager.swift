@@ -11,7 +11,7 @@ struct RequestManager {
     static let shared = RequestManager()
     
     func performRequest(with urlString: String, completion: @escaping (Data?, String?) -> Void ){
-        if let request = URL(string: urlString) {
+        if let request = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "") {
 
             let session = URLSession(configuration: .default)
 
